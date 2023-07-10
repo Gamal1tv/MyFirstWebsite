@@ -1,0 +1,114 @@
+*{
+    font-family: 'Signika', sans-serif;
+}
+
+body
+{
+    background-color: lightslategray;
+}
+
+
+nav
+{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.each-nav
+{
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.each-nav:hover,
+.each-nav:focus 
+{
+    transition: .2s;
+    transform: scale(1.15);
+}
+.each-nav
+{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+} 
+
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.main-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+ul
+{
+    display: inline-block;
+}
+
+
+.info-container
+{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+    color: black;
+    width: 30%;
+}
+.about-container
+{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.hobbies
+{
+    background-color: bisque;
+    text-align: center;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.social-container
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.each-social
+{  
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    text-align: center;
+    border-radius: 10px;
+    border-style: solid;
+}
+.each-social:hover,
+.each-social:focus 
+{
+    transition: .2s;
+    transform: scale(1.15);
+}
+
+

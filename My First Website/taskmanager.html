@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #task-box{
+                color: black;
+                border: 3px;
+                border-style: dashed;
+                padding: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="input-field">
+            <label>Task: </label>
+            <input type="text" id="text-input" placeholder="input a task to do">
+            <button id="confirmation-btn">Confirm</button>
+        </div>
+
+        <div id="task-box">
+            <h1>TO DO:</h1>
+
+        </div>
+
+        <script>
+            const addBtn = document.getElementById('confirmation-btn');
+            const inputVal = document.getElementById('text-input');
+            const taskBox = document.getElementById('task-box');
+
+
+            addBtn.addEventListener('click',()=>{
+                if(inputVal.value != "")
+                {
+                    const newEntry = document.createElement('div');
+                    const remBtn = document.createElement('button');
+                    remBtn.innerText = "Remove";
+                    console.log(inputVal.value);
+
+                    newEntry.append(inputVal.value);
+                    newEntry.append(remBtn);
+                    taskBox.append(newEntry);
+                    inputVal.value = "";
+
+                    //remove task
+                    remBtn.addEventListener('click',()=>{
+                        newEntry.remove();
+                    })
+                }
+                
+            })
+        </script>
+    </body>
+</html>
